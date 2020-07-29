@@ -21,7 +21,7 @@ export class ConsoleEchoBot {
             if (turnContext.activity.text.toLowerCase() === 'quit') {
                 process.exit();
 
-            // Otherwise echo back to the user the received message.
+            // Otherwise echo back to the user the received message.aaa
             } else if (turnContext.activity.text) {
                 await turnContext.sendActivity(`You sent '${ turnContext.activity.text }'`);
             }
